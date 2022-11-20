@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" objects that handles all default RestFul API actions for Amenities"""
+""" objects that handles all defaults RestFul API actions for Amenities"""
 from models.amenity import Amenity
 from models import storage
 from api.v1.views import app_views
@@ -74,7 +74,7 @@ def post_amenity():
 @swag_from('documentation/amenity/put_amenity.yml', methods=['PUT'])
 def put_amenity(amenity_id):
     """
-    Updates an amenity
+    Updates an amenitys
     """
     if not request.get_json():
         abort(400, description="Not a JSON")

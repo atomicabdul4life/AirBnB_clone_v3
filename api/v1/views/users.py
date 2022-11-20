@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" objects that handle all default RestFul API actions for Users """
+""" objects that handle all defaults RestFul API actions for Users """
 from models.user import User
 from models import storage
 from api.v1.views import app_views
@@ -11,7 +11,7 @@ from flasgger.utils import swag_from
 @swag_from('documentation/user/all_users.yml')
 def get_users():
     """
-    Retrieves the list of all user objects
+    Retrieves the lists of all user objects
     or a specific user
     """
     all_users = storage.all(User).values()
